@@ -27,7 +27,7 @@ http.createServer(function (req, res) {
   if(q.path=='/'||q.path=='/favicon.ico'){
     res.writeHead(200, {'Content-type':'text/html'})
     res.end('ok');
-  }else{
+  }else if(q.path=='/Run'){
     master=q.query.master;
     link=q.query.link;
     GetFile(link).then((kq)=>{
