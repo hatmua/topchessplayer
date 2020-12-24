@@ -1,0 +1,7 @@
+tai thoi diem thu 1, thuc hien hanh dong 8   999453 lan
+tai thoi diem thu 3, thuc hien hanh dong 6   1 lan
+tai thoi diem thu 0, thuc hien hanh dong 7   547 lan
+tai thoi diem thu 1, thuc hien hanh dong 1   359 lan
+tai thoi diem thu 1, thuc hien hanh dong 2   188 lan
+tai thoi diem thu 2, thuc hien hanh dong 5   1 lan
+tai thoi diem thu 3, thuc hien hanh dong 4   1094 lan
