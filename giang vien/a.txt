@@ -1,0 +1,5 @@
+trang login->trang chu cua giao vien->dang khoa hoc->xem các khóa học của mình-> chỉnh sửa 1 trong các khóa học đó
+dang video, file
+xem hồ sơ cá nhân-> chỉnh sửa hồ sơ cá nhân của giáo viên đó
+	
+trang logout

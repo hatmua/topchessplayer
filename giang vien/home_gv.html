@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><!-- icon -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f93f74235e.js" crossorigin="anonymous"></script>
+
+    <style media="screen">
+    .navbar-fixed-top {
+      min-height: 70px;
+    }
+
+    .navbar-nav> li > a {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      line-height: 70px;
+    }
+    .navbar-header a{
+      padding-top: 0px;
+      padding-bottom: 0px;
+      line-height: 70px;
+    }
+    @media (max-width: 767px) {
+      .navbar-nav > li > a {
+      line-height: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;}
+      .navbar-header a{
+        line-height: 50px;
+      }
+    }
+
+    .site-footer
+      {
+        background-color:#26272b;
+        padding:45px 0 20px;
+        font-size:15px;
+        line-height:24px;
+        color:#737373;
+      }
+      .site-footer hr
+      {
+        border-top-color:#bbb;
+        opacity:0.5
+      }
+      .site-footer hr.small
+      {
+        margin:20px 0
+      }
+      .site-footer h6
+      {
+        color:#fff;
+        font-size:16px;
+        text-transform:uppercase;
+        margin-top:5px;
+        letter-spacing:2px
+      }
+      .site-footer a
+      {
+        color:#737373;
+      }
+      .site-footer a:hover
+      {
+        color:#3366cc;
+        text-decoration:none;
+      }
+      .footer-links
+      {
+        padding-left:0;
+        list-style:none
+      }
+      .footer-links li
+      {
+        display:block
+      }
+      .footer-links a
+      {
+        color:#737373
+      }
+      .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+      {
+        color:#3366cc;
+        text-decoration:none;
+      }
+      .footer-links.inline li
+      {
+        display:inline-block
+      }
+      .site-footer .social-icons
+      {
+        text-align:right
+      }
+      .site-footer .social-icons a
+      {
+        width:40px;
+        height:40px;
+        line-height:40px;
+        margin-left:6px;
+        margin-right:0;
+        border-radius:100%;
+        background-color:#33353d
+      }
+      .copyright-text
+      {
+        margin:0
+      }
+      @media (max-width:991px)
+      {
+        .site-footer [class^=col-]
+        {
+          margin-bottom:30px
+        }
+      }
+      @media (max-width:767px)
+      {
+        .site-footer
+        {
+          padding-bottom:0
+        }
+        .site-footer .copyright-text,.site-footer .social-icons
+        {
+          text-align:center
+        }
+      }
+      .social-icons
+      {
+        padding-left:0;
+        margin-bottom:0;
+        list-style:none
+      }
+      .social-icons li
+      {
+        display:inline-block;
+        margin-bottom:4px
+      }
+      .social-icons li.title
+      {
+        margin-right:15px;
+        text-transform:uppercase;
+        color:#96a2b2;
+        font-weight:700;
+        font-size:13px
+      }
+      .social-icons a{
+        background-color:#eceeef;
+        color:#818a91;
+        font-size:16px;
+        display:inline-block;
+        line-height:44px;
+        width:44px;
+        height:44px;
+        text-align:center;
+        margin-right:8px;
+        border-radius:100%;
+        -webkit-transition:all .2s linear;
+        -o-transition:all .2s linear;
+        transition:all .2s linear
+      }
+      .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+      {
+        color:#fff;
+        background-color:#29aafe
+      }
+      .social-icons.size-sm a
+      {
+        line-height:34px;
+        height:34px;
+        width:34px;
+        font-size:14px
+      }
+      .social-icons a.facebook:hover
+      {
+        background-color:#3b5998
+      }
+      .social-icons a.twitter:hover
+      {
+        background-color:#00aced
+      }
+      .social-icons a.linkedin:hover
+      {
+        background-color:#007bb6
+      }
+      .social-icons a.dribbble:hover
+      {
+        background-color:#ea4c89
+      }
+      @media (max-width:767px)
+      {
+        .social-icons li.title
+        {
+          display:block;
+          margin-right:0;
+          font-weight:600
+        }
+      }
+    </style>
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#" style="width:150px;">Brand</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"style="width:200px;">
+          <a class="nav-link" href="#"><i class="fas fa-folder-plus"></i> Khởi tạo khóa học</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-cog"></i> Quản lí
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><i class="fas fa-book"></i> Khóa học của tôi</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-id-badge"></i> Hồ sơ của tôi</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--content  -->
+  <div style="padding:30px;">
+    <div class="card text-center">
+      <div class="card-header">
+        &nbsp;
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Khởi tạo khóa học</h5>
+        <p class="card-text">Tạo khóa học của bạn và thu hút hàng tỷ học viên đến tham dự</p>
+        <a href="#" class="btn btn-primary">Tạo ngay</a>
+      </div>
+      <div class="card-footer text-muted">
+        &nbsp;
+      </div>
+    </div>
+    <div class="row" style="margin-top:20px;">
+      <div class="col-xs-3 col-md-3 col-sm-12" style="margin-top:30px;">
+        <link rel="stylesheet" href="css/date.css">
+        <div class="datepicker-here datepicker-promo"><div class="datepicker-inline"><div class="datepicker"><i class="datepicker--pointer"></i><nav class="datepicker--nav"><div class="datepicker--nav-action" data-action="prev"><svg><path d="M 17,12 l -5,5 l 5,5"></path></svg></div><div class="datepicker--nav-title">December, <i>2020</i></div><div class="datepicker--nav-action" data-action="next"><svg><path d="M 14,12 l 5,5 l -5,5"></path></svg></div></nav><div class="datepicker--content"><div class="datepicker--days datepicker--body active"><div class="datepicker--days-names"><div class="datepicker--day-name -weekend-">Su</div><div class="datepicker--day-name">Mo</div><div class="datepicker--day-name">Tu</div><div class="datepicker--day-name">We</div><div class="datepicker--day-name">Th</div><div class="datepicker--day-name">Fr</div><div class="datepicker--day-name -weekend-">Sa</div></div><div class="datepicker--cells datepicker--cells-days"><div class="datepicker--cell datepicker--cell-day -weekend- -other-month-" data-date="29" data-month="10" data-year="2020">29</div><div class="datepicker--cell datepicker--cell-day -other-month-" data-date="30" data-month="10" data-year="2020">30</div><div class="datepicker--cell datepicker--cell-day" data-date="1" data-month="11" data-year="2020">1</div><div class="datepicker--cell datepicker--cell-day" data-date="2" data-month="11" data-year="2020">2</div><div class="datepicker--cell datepicker--cell-day" data-date="3" data-month="11" data-year="2020">3</div><div class="datepicker--cell datepicker--cell-day" data-date="4" data-month="11" data-year="2020">4</div><div class="datepicker--cell datepicker--cell-day -weekend-" data-date="5" data-month="11" data-year="2020">5</div><div class="datepicker--cell datepicker--cell-day -weekend-" data-date="6" data-month="11" data-year="2020">6</div><div class="datepicker--cell datepicker--cell-day" data-date="7" data-month="11" data-year="2020">7</div><div class="datepicker--cell datepicker--cell-day" data-date="8" data-month="11" data-year="2020">8</div><div class="datepicker--cell datepicker--cell-day" data-date="9" data-month="11" data-year="2020">9</div><div class="datepicker--cell datepicker--cell-day" data-date="10" data-month="11" data-year="2020">10</div><div class="datepicker--cell datepicker--cell-day" data-date="11" data-month="11" data-year="2020">11</div><div class="datepicker--cell datepicker--cell-day -weekend-" data-date="12" data-month="11" data-year="2020">12</div><div class="datepicker--cell datepicker--cell-day -weekend-" data-date="13" data-month="11" data-year="2020">13</div><div class="datepicker--cell datepicker--cell-day" data-date="14" data-month="11" data-year="2020">14</div><div class="datepicker--cell datepicker--cell-day" data-date="15" data-month="11" data-year="2020">15</div><div class="datepicker--cell datepicker--cell-day" data-date="16" data-month="11" data-year="2020">16</div><div class="datepicker--cell datepicker--cell-day" data-date="17" data-month="11" data-year="2020">17</div><div class="datepicker--cell datepicker--cell-day" data-date="18" data-month="11" data-year="2020">18</div><div class="datepicker--cell datepicker--cell-day -weekend-" data-date="19" data-month="11" data-year="2020">19</div><div class="datepicker--cell datepicker--cell-day -weekend-" data-date="20" data-month="11" data-year="2020">20</div><div class="datepicker--cell datepicker--cell-day" data-date="21" data-month="11" data-year="2020">21</div><div class="datepicker--cell datepicker--cell-day" data-date="22" data-month="11" data-year="2020">22</div><div class="datepicker--cell datepicker--cell-day -current-" data-date="23" data-month="11" data-year="2020">23</div><div class="datepicker--cell datepicker--cell-day" data-date="24" data-month="11" data-year="2020">24</div><div class="datepicker--cell datepicker--cell-day" data-date="25" data-month="11" data-year="2020">25</div><div class="datepicker--cell datepicker--cell-day -weekend-" data-date="26" data-month="11" data-year="2020">26</div><div class="datepicker--cell datepicker--cell-day -weekend-" data-date="27" data-month="11" data-year="2020">27</div><div class="datepicker--cell datepicker--cell-day" data-date="28" data-month="11" data-year="2020">28</div><div class="datepicker--cell datepicker--cell-day" data-date="29" data-month="11" data-year="2020">29</div><div class="datepicker--cell datepicker--cell-day" data-date="30" data-month="11" data-year="2020">30</div><div class="datepicker--cell datepicker--cell-day" data-date="31" data-month="11" data-year="2020">31</div><div class="datepicker--cell datepicker--cell-day -other-month-" data-date="1" data-month="0" data-year="2021">1</div><div class="datepicker--cell datepicker--cell-day -weekend- -other-month-" data-date="2" data-month="0" data-year="2021">2</div></div></div></div></div></div></div>
+      </div>
+      <div class="col-xs-9 col-md-9 col-sm-12" style="margin-top:30px;">
+        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="2000" style="height:300px;">
+              <img height="100%"src="https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="2000" style="height:300px;">
+              <img height="100%"src="https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-1029171697.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" style="height:300px;">
+              <img height="100%"src="https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/advice/maps-satellite-images/satellite-image-of-globe.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Đây là đồ án cuối kì và giữa kì của môn lập trình web do nhóm thực hiện, kĩ năng để có được bài này bao gồm jquery, css, boostrap, html, js, nodejs, sql, và xin cảm ơn sự giúp đỡ nhiệt tình từ quý thầy</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
+           <a href="#">Tui</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
